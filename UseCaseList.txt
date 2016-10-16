@@ -32,7 +32,7 @@ Recommends Teacher based on Location. (i.e. if your profile address is Tralee it
 Rate Teacher/Tuner out of 5 (or recommend/not recommend)
 
 
-OVERVIEW and MISSION STATMENT
+OVERVIEW and MISSION STATEMENT
 
 Our task is to create an application that will connect people interested in pianos and provide them with useful information. By using this application you will be able find information relating to piano teachers, piano tuners and pianos for sale, providing a means to search a directory filtered by location and ranking.
 Our mission is to provide an application  which is simple and accessible, whilst providing efficient  and effective functionally.
