@@ -2,16 +2,16 @@
 							
 
 
-User Reqs
+User Requirements
 
-Register Account					1				4	            a                           B
+Register Account					1				4	                a                           B
 Update Account						1				2                   b                           B
 Deactivate Account					1				2                   c                           B
 
 User Login 					    	0				4                   a,b,c                       B
 
 Search For Teachers					3				4                   a                           C
-Search Pianos for sale					3				4                   b                           C
+Search Pianos for sale				3				4                   b                           C
 Search Piano Tuners					3				4                   c                           C
 
 Book Teacher						3				4                   a                           C
@@ -19,7 +19,7 @@ Buy Piano					        3				4                   b                           C
 Book Piano Tuner					3				4                   c                           C
 
 Rate Teacher						4				2                  a,b,c                        F
-Rate Tuner						4				2                  a,b,c                        F
+Rate Tuner						    4				2                  a,b,c                        F
 	
 User Logout					        0				2                  a,b,c                        B
 
@@ -30,4 +30,10 @@ OPTIONAL FUNCTIONALITY THAT I JUST MADE UP
 Recommends Teacher based on Location. (i.e. if your profile address is Tralee it will recommend teachers based in Tralee)
 
 Rate Teacher/Tuner out of 5 (or recommend/not recommend)
+
+
+Overview and Mission Statement
+
+Our task is to create an application that will connect people interested in pianos and provide them with useful information. By using this application you will be able find information relating to piano teachers, piano tuners and pianos for sale, providing a means to search a directory filtered by location and ranking.
+Our mission is to provide an application  which is simple and accessible, whilst providing efficient  and effective functionally.
 
