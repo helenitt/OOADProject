@@ -1,7 +1,23 @@
 PROBLEM WITH THIS USECASE- WE DID THE FULLY DRESSED FIRST BY MISTAKE
 
+Brief Use CAses
 
 
+Register Account 
+	The user enters his details in order to register. The system verifies that the student has entered valid data.
+	The system saves the users details and displays a confirmation message.
+
+Search for Teachers
+	The user enters search criteria to search for a piano teacher. The user enters location and price details.
+	The system verifies that the user has entered valid search terms. The system displays the piano teacher details.
+
+Book Teacher
+	The user selects a Piano Teacher from the system. The system displays the Piano Teacher detils and asks the user 
+	to confirm the piano teacher booking. the system informs the teacher of the booking and displays a confirmation message for the user
+
+Rate Teacher
+	The user selects a Piano Teacher that they wish to recommend. The user must have previously booked the Piano Teacher. The user can then recommend 
+	the teacher. Once the user has recommended the teacher a confirmation message is displayed.
 
 
 
@@ -51,18 +67,18 @@ Typical Scenario
 	2.	System retrieves the next user id
 	3.	System displays registration UI
 	4.	User enters registration details
-		•	Username
-		•	Name
-		•	Address
-		•	Email 
-		•	Phone
-		•	Password
-		•	Password Confirmation
+		â€¢	Username
+		â€¢	Name
+		â€¢	Address
+		â€¢	Email 
+		â€¢	Phone
+		â€¢	Password
+		â€¢	Password Confirmation
 	5.	User submits details
 	6.	System validates details
-		•	All fields must be entered
-		•	Email is valid format
-		•	Password and Password Confirmation must match
+		â€¢	All fields must be entered
+		â€¢	Email is valid format
+		â€¢	Password and Password Confirmation must match
 	7.	System assigns the system date as registration date 
 	8.	System saves user details in the User File 
 	9.	System displays confirmation message
