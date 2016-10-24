@@ -5,14 +5,14 @@ Dressing(Brief, Casual, Fully Dressed)
 
 User Requirements
 
-Register Account			1		4	  	a   		B
+Register Account		1		4	  	a   		B
 Update Account			1		2 		b     	B
 Deactivate Account		1		2   		c      	B
 
 User Login 				0		4   		b     	B
 
 Search For Teachers		3		4          a		C
-Search Pianos for sale		3		4          b           C
+Search Pianos for sale	3		4          b           C
 Search Piano Tuners		3		4          c           C
 
 Book Teacher			3		4          a           C
