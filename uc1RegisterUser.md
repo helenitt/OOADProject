@@ -27,6 +27,7 @@
 | |6.	System identifies invalid entry|
 | |7.	System displays error message|
 | |8.	System prompts user to re-enter details|
+| | | 
 |Conclusions|User is now registered in the system|
 |Post conditions|User may now use the system|
 |Business Rules| |
