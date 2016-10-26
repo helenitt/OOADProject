@@ -5,9 +5,9 @@ Dressing(Brief, Casual, Fully Dressed)
 
 |*ID*|*User Requirements*|Risk|Value|Team|Dressing|
 |----|----|:----:|:----:|:----:|:----:|
-|uc1|Register Account|1|4|a|B|
+|uc1|Register Account|1|4|c|B|
 |uc2|Update Account|1|2|b|B|
-|uc3|Deactivate Account|1|2|c|B|
+|uc3|Deactivate Account|1|2|a|B|
 | | | | | | | | 
 uc4|User Login|0|4|b|B|
 uc5|User Logout|0|2|b|B|
