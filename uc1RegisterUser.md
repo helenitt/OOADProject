@@ -25,8 +25,8 @@
 | | |
 |Alternate Scenario 1| |
 | |2. System fails to retrieve next user id|
-| |7.	System displays error message|
-| |8.	System clears UI|
+| |3.	System displays error message|
+| |4.	System clears UI|
 | | |
 |Alternate Scenario 2| |
 | |6.	System identifies invalid entry of details|
@@ -34,9 +34,9 @@
 | |8.	System prompts user to re-enter details|
 | | | 
 |Alternate Scenario 3| |
-| |6.	System fails to save user details in the **User File**|
-| |7.	System displays error message|
-| |8.	System displays registration UI with registration details|
+| |8.	System fails to save user details in the **User File**|
+| |9.	System displays error message|
+| |10.	System displays registration UI with registration details|
 | | | 
 |Conclusions|User is now registered in the system|
 |Post conditions|User may now use the system|
