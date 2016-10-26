@@ -10,8 +10,9 @@
 |Description|User registers new account in the system|
 |Preconditions|Registration form must be completed and submitted|
 |Trigger| |
-| | | | | | | | 
-|Typical Scenario|1.	User invokes register function
+| | | 
+|Typical Scenario| |
+1.	User invokes register function
 2.	System retrieves the next user id
 3.	System displays registration UI
 4.	User enters registration details
@@ -31,12 +32,11 @@
 8.	System saves user details in the **User File** 
 9.	System displays confirmation message
 10.	System clears UI
-|
-| | | | | | | | 
-|Alternate Scenarios|6.	System identifies invalid entry
+| | | 
+|Alternate Scenarios| |
+6.	System identifies invalid entry
 7.	System displays error message
 8.	System prompts user to re-enter details
-|
 |Conclusions|User is now registered in the system|
 |Post conditions|User may now use the system|
 |Business Rules| |
