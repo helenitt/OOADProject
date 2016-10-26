@@ -16,18 +16,18 @@
 | |2. System retrieves the next user id|
 | |3. System displays registration UI|
 | |4. User enters registration details|
-| |..*Username*..|
-| |..*Name*..|
-| |..*Address*..|
-| |..*Email*..|
-| |..*Phone*..|
-| |..*Password*..|
-| |..*Password Confirmation*..|
+| |-Username|
+| |-Name|
+| |-Address|
+| |-Email|
+| |-Phone|
+| |-Password|
+| |-Password Confirmation|
 | |5.	User submits details|
 | |6.	System validates details|
-| |..*All fields must be entered*..|
-| |..*Email is valid format*..|
-| |..*Password and Password Confirmation must match*..|
+| |-All fields must be entered|
+| |-Email is valid format|
+| |-Password and Password Confirmation must match|
 | |7. System assigns the system date as registration date |
 | |8.	System saves user details in the **User File** |
 | |9.	System displays confirmation message|
