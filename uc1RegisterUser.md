@@ -12,10 +12,10 @@
 |Trigger| |
 | | | 
 |Typical Scenario| |
-1.	User invokes register function
-2.	System retrieves the next user id
-3.	System displays registration UI
-4.	User enters registration details
+| |1.User invokes register function
+2.System retrieves the next user id
+3.System displays registration UI
+4.User enters registration details
 ..*Username
 ..*Name
 ..*Address
@@ -31,7 +31,7 @@
 7.	System assigns the system date as registration date 
 8.	System saves user details in the **User File** 
 9.	System displays confirmation message
-10.	System clears UI
+10.	System clears UI| 
 | | | 
 |Alternate Scenarios| |
 6.	System identifies invalid entry
