@@ -7,6 +7,7 @@
 |Priority/Risk|1|
 |Value|4|
 |Primary Actor|User|
+|Secondary Actor|Teacher, Tuner|
 |Description|User registers new account in the system|
 |Preconditions|Registration form must be completed and submitted|
 |Trigger| |
