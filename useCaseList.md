@@ -5,7 +5,7 @@ Dressing(Brief, Casual, Fully Dressed)
 
 |*ID*|*User Requirements*|Risk|Value|Team|Dressing|
 |----|----|:----:|:----:|:----:|:----:|
-|uc1|Register Account|1|4|c|B|
+|uc1|Register Account|1|4|c|F|
 |uc2|Update Account|1|2|b|B|
 |uc3|Deactivate Account|1|2|a|B|
 | | | | | | | | 
@@ -21,7 +21,7 @@ uc10|Buy Piano|3|4|b|C|
 uc11|Book Piano Tuner|3|4|c|F|
 | | | | | | | | 
 uc12|Rate Teacher|4|2|a|F|
-uc13|Rate Tuner|4|2|c|C|
+uc13|Rate Tuner|4|2|c|B|
 	
 
 
