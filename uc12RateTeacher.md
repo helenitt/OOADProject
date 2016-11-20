@@ -1,2 +1,33 @@
-#uc12 Rate Teacher#
-Rate Teacher The user selects a Piano Teacher that they wish to recommend. The user must have previously booked the Piano Teacher. The user can then recommend the teacher. Once the user has recommended the teacher a confirmation message is displayed.
+#uc 12 Rate Piano Teacher# 
+
+*uc12* Rate Piano Teacher 
+|Name| Rate Piano Teacher|
+
+|Use Case Id| uc 12|
+|Priority/Risk| 3
+
+|Value| 4|
+
+|Primary Actor|Customer|
+
+|Secondary Actor| N/A
+
+|Description|
+
+|Preconditions|
+
+ |Trigger|
+ 
+ | | | 
+ 
+ |Typical Scenario| |
+ 
+ |Alternate Scenario 1| |
+ 
+ |Conclusions|
+ 
+ |Post conditions|
+ 
+ |Business Rules| |
+ 
+ |Implementation Constraints| |
