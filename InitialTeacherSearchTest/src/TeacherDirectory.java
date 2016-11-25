@@ -9,11 +9,15 @@ import java.util.List;
 
 public class TeacherDirectory {
 
-    private List teachers;
+    private final List<PianoTeachers> teachers;
 
     public TeacherDirectory() {
-        teachers = new LinkedList();
+        teachers = new LinkedList<>();
+
+
     }
+
+
 
     public void addTeachers(String teachersName, String area, int rating, String phone) {
         PianoTeachers newTeach = new PianoTeachers(teachersName, area, rating, phone);
@@ -23,8 +27,7 @@ public class TeacherDirectory {
     }
 
     public PianoTeachers getTeacher(String area) {
-        for (Iterator i = teachers.iterator(); i.hasNext(); ) {
-            PianoTeachers teach = (PianoTeachers) i.next();
+        for (PianoTeachers teach : teachers) {
             {
                 if (teach.getArea().equals((area)))
                     return teach;
@@ -34,18 +37,16 @@ public class TeacherDirectory {
     }
 
 
-    public PianoTeachers search(PianoTeachers searchTeacher) {
-        for (Iterator i = teachers.iterator(); i.hasNext(); ) {
-            PianoTeachers teach = (PianoTeachers) i.next();
-
-            String teachersName = searchTeacher.getTeachersName();
-            if ((teachersName != null) && (!teachers.equals("")) &&
-                    (!teachersName.equals()))
+    public List<PianoTeachers> search(PianoTeachers searchTeacher) {
+        List<PianoTeachers> foundTeach = new LinkedList<>();
+        for (PianoTeachers teach : teachers) {
+            if (teach.getPhone().matches(searchTeacher.getPhone()))
+                foundTeach.add((teach));
 
         }
 
 
-    }
+    return foundTeach;}
 
 
 }

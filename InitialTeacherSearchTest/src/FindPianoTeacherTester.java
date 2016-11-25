@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * Created by t00183399 on 21/11/2016.
@@ -7,30 +7,65 @@ public class FindPianoTeacherTester {
 
     public static void main(String[] args) {
         //PianoTeachers addTeacher = new PianoTeachers("Shane Clifford", "Tralee", 5, "08764559899");
-        LinkedList<PianoTeachers> addTeachers = new LinkedList<>();
+        // List<TeacherDirectory> lstTeachers = new LinkedList<>();
+        //LinkedList<PianoTeachers> pT = new LinkedList<>();
 
-        addTeachers.add(new PianoTeachers("Shane Clifford", "Tralee", 5, "08764559899"));
-        addTeachers.add(new PianoTeachers("Gary Healy", "Killarney", 5, "08767855545"));
-        addTeachers.add(new PianoTeachers("Mary Black", "Tralee", 5, "087647567454"));
-        addTeachers.add(new PianoTeachers("Billy Batts", "Listowel", 5, "0872585558"));
+        //PianoTeachers pT = new PianoTeachers();
+
+        TeacherDirectory teachDir = new TeacherDirectory();
+
+        teachDir.addTeachers("Shane Clifford", "Tralee", 5, "0879899986");
+        teachDir.addTeachers("Marcel Proust", "Tralee", 5, "0879899986");
+        teachDir.addTeachers("Gustave Flaubert", "Killarney", 5, "0879899986");
+        teachDir.addTeachers("Leo Tolstoy", "Tralee", 5, "0879899986");
+        teachDir.addTeachers("Anton Chekhov", "Dingle", 5, "0879899986");
+
+
+        Scanner in = new Scanner(System.in);
+
+
+        String area;
+
+        System.out.println("Please enter the area to search ");
+        area = in.nextLine();
+
+        System.out.println(teachDir.getTeacher(area) == null ? "Sorry no teachers in this area" : "These teachers are in your area: " + teachDir.getTeacher(area));
+
+
+
+    }
+}
+
 
         //System.out.println(addTeachers);
 
 
-        PianoTeachers testSearch = new PianoTeachers();
-        testSearch.setArea("Tralee");
-
-        if (testSearch != null) {
-            if (testSearch.getTeachersName().equals(addTeachers.) ||
-                    testSearch.getArea().equals(tes))
 
 
-        } else {
-            System.out.println("ERROR! Please try again");
+       // PianoTeachers testSearch = new PianoTeachers();
+      //  testSearch.setArea(area);
+
+    //    System.out.println("These teachers are in your area: " +  );
+
+ /*       if (!addTeachers.equals(null)) {
+
+            for (PianoTeachers p : addTeachers
+                    ) {
+                if (p.getArea().matches(testSearch.getArea()))
+                    System.out.print(p.toString() + "\n");
+
+            }
+        }
+            else
+                System.out.print("Sorry no teachers in this location");
+
+
         }
 
+                */
 
-    }
 
 
-}
+
+
+
