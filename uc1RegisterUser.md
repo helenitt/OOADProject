@@ -6,7 +6,7 @@
 |Use Case Id|uc2|
 |Priority/Risk|1|
 |Value|4|
-|Primary Actor|User|
+|Primary Actor|Customer|
 |Secondary Actor|Teacher, Tuner|
 |Description|User registers new account in the system|
 |Preconditions|Registration form must be completed and submitted|
@@ -14,30 +14,23 @@
 | | | 
 |Typical Scenario| |
 | |1. User invokes register function|
-| |2. System retrieves the next user id|
-| |3. System displays registration UI|
-| |4. User enters registration details*-Username, Name, Address, Email, Phone, Password, Password Confirmation*|
-| |5.	User submits details|
-| |6.	System validates details*-All fields must be entered, Email is valid format, Password and Password Confirmation must match*|
-| |7. System assigns the system date as registration date |
-| |8.	System saves user details in the **User File** |
-| |9.	System displays confirmation message|
-| |10.	System clears UI| 
+| |2. System retrieves the next user id and displays registration form|
+| |3. User enters and submits registration details*-Username, Name, User Type, Email, Phone, Password, Password Confirmation*|
+| |4.	System validates details*-All fields must be entered, Email is valid format, Password and Password Confirmation must match*|
+| |5. System assigns the system date as registration date and saves user details in the **User File**|
+| |6.	System displays confirmation message|
 | | |
 |Alternate Scenario 1| |
 | |2. System fails to retrieve next user id|
 | |3.	System displays error message|
-| |4.	System clears UI|
 | | |
 |Alternate Scenario 2| |
-| |6.	System identifies invalid entry of details|
-| |7.	System displays error message|
-| |8.	System prompts user to re-enter details|
+| |4.	System identifies invalid entry of details|
+| |5.	System displays error message and prompts user to re-enter details|
 | | | 
 |Alternate Scenario 3| |
-| |8.	System fails to save user details in the **User File**|
-| |9.	System displays error message|
-| |10.	System displays registration UI with registration details|
+| |5.	System fails to save user details in the **User File**|
+| |6.	System displays error message|
 | | | 
 |Conclusions|User is now registered in the system|
 |Post conditions|User may now use the system|
