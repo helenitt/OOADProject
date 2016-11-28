@@ -23,7 +23,7 @@
 | |3.	System displays error message|
 | | |
 |Alternate Scenario 2| |
-| |3. User does not wish to by piano|
+| |3. User does not wish to buy piano|
 | |4.	System displays error/cancel message|
 | | |
 |Alternate Scenario 3| |
