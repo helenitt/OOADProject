@@ -45,6 +45,10 @@ public class Piano {
         this.pianoCost = pianoCost;
     }
 
+    @Override
+    public String toString(){
+        return "Piano ID: " + pianoID + "/nPiano Name: " + pianoName + "/nPiano Cost: €" + pianoCost;
+    }
 
 
 
