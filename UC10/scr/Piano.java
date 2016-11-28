@@ -18,6 +18,35 @@ public class Piano {
         this.pianoCost = pianoCost;
     }
 
+    //accessor
+    public int getPianoId(){
+        return pianoID;
+    }
+
+    //mutator
+    public void setPianoID(int pianoID){
+        this.pianoID = pianoID;
+    }
+
+    public String getPianoName(){
+        return pianoName;
+    }
+
+    public void setPianoName(String pianoName)
+    {
+        this.pianoName = pianoName;
+    }
+
+    public float getPianoCost(){
+        return pianoCost;
+    }
+
+    public void setPianoCost(float pianoCost){
+        this.pianoCost = pianoCost;
+    }
+
+
+
 
 
 }
