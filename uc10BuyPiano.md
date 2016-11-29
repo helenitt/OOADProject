@@ -13,22 +13,22 @@
 |Trigger| |
 | | | 
 |Typical Scenario| |
-| |1. User invokes buy piano function|
+| |1. 1. User invokes buy piano function|
 | |2. System retrieves piano id and displays piano details|
-| |3. User confirms whenever he is willing to buy this piano|
-| |4. System takes the amount needed to pay for piano from his account|
-| |5. System displays confirmation message|
+| |3. User confirms whether or not he wants to buy the piano|
+| |4. System takes the amount needed to pay for the piano from his account|
+| |5. System displays a confirmation message|
 |Alternate Scenario 1| |
-| |2. System fails to retrieve piano id|
-| |3.	System displays error message|
+| |2. System fails to retrieve the piano id|
+| |3.	System displays an error message|
 | | |
 |Alternate Scenario 2| |
-| |3. User does not wish to buy piano|
-| |4.	System displays error/cancel message|
+| |3. User does not want to buy the piano|
+| |4.	System displays an error/cancel message|
 | | |
 |Alternate Scenario 3| |
-| |4. System fails to take cost of the piano from user account|
-| |5.	System displays error message|
+| |4. System fails to take the cost of the piano from the users account|
+| |5.	System displays an error message|
 | | |
 |Conclusions|User bought piano|
 |Post conditions| |
