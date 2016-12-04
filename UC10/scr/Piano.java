@@ -50,7 +50,4 @@ public class Piano {
         return "Piano ID: " + pianoID + "/nPiano Name: " + pianoName + "/nPiano Cost: €" + pianoCost;
     }
 
-
-
-
 }
