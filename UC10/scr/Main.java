@@ -53,7 +53,7 @@ public class Main {
                     print("Not Implemented Yet");
                     break;
                 case "10":
-
+                    BuyPiano buyPiano = new BuyPiano();
                     break;
                 case "11":
                 case "12":
