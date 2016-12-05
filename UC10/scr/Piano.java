@@ -6,19 +6,22 @@ public class Piano {
     private int pianoID;
     private String pianoName;
     private float pianoCost;
+    private int pianoQuantity;
 
     //default constructor
     public Piano(){
         this.pianoID = 0;
         this.pianoName = null;
         this.pianoCost = 0.0f;
+        this.pianoQuantity = 0;
     }
 
     //constructor
-    public Piano(int pianoID, String pianoName, float pianoCost){
+    public Piano(int pianoID, String pianoName, float pianoCost, int pianoQuantity){
         this.pianoID = pianoID;
         this.pianoName = pianoName;
         this.pianoCost = pianoCost;
+        this.pianoQuantity = pianoQuantity;
     }
 
     //accessor
@@ -46,6 +49,14 @@ public class Piano {
 
     public void setPianoCost(float pianoCost){
         this.pianoCost = pianoCost;
+    }
+
+    public int getPianoQuantity(){
+        return pianoQuantity;
+    }
+
+    public void setPianoQuantity(int pianoQuantity){
+        this.pianoQuantity = pianoQuantity;
     }
 
     @Override
