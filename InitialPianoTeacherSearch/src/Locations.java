@@ -7,13 +7,13 @@ public enum Locations {
     public String toString() {
         switch (this) {
             case TRALEE:
-                return "tralee";
+                return "Tralee";
             case KILLARNEY:
-                return "killarney";
+                return "Killarney";
             case DINGLE:
-                return "dingle";
+                return "Dingle";
             default:
-                return "unknown location";
+                return "Unknown Location";
 
             }
         }
