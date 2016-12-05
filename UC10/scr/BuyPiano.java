@@ -17,4 +17,8 @@ public class BuyPiano {
         return fTitle;
     }
 
+    public void addPiano(int pianoID, String pianoName, float pianoCost, int pianoQuantity){
+        Piano newPiano = new Piano(pianoID, pianoName, pianoCost, pianoQuantity);
+        pianos.add(newPiano);
+    }
 }
