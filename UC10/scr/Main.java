@@ -57,7 +57,7 @@ public class Main {
                     break;
                 case "10":
                     BuyPiano buyPiano = new BuyPiano();
-
+                    buyPiano.buyPiano(5, 2);
                     break;
                 default:
                     println("No such a function");

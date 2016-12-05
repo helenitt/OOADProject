@@ -29,6 +29,8 @@ public class BuyPiano {
     }
 
     public void buyPiano(int pianoID, int pianoQuantity){
-
+        //System.out.println(pianos.get(pianoID-1).toString());
+        pianos.get(pianoID-1).setPianoQuantity(pianos.get(pianoID-1).getPianoQuantity() - pianoQuantity );
+        //System.out.println(pianos.get(pianoID-1).toString());
     }
 }
