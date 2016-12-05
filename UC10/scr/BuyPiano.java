@@ -7,7 +7,6 @@ import java.util.List;
 
 public class BuyPiano {
     private static String fTitle = "Buy Piano";
-    private static String fDesc = "Allows to buy Piano";
     private final List<Piano> pianos;
 
     public BuyPiano(){
@@ -18,7 +17,4 @@ public class BuyPiano {
         return fTitle;
     }
 
-    public static String getDesc(){
-        return fDesc;
-    }
 }
