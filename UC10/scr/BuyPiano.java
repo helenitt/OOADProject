@@ -31,15 +31,24 @@ public class BuyPiano {
 
     public void buyPiano(int pianoID, int pianoQuantity){
         //System.out.println(pianos.get(pianoID-1).toString());
-        if(pianos.get(pianoID-1).getPianoQuantity() >= pianoQuantity)
-            pianos.get(pianoID-1).setPianoQuantity(pianos.get(pianoID-1).getPianoQuantity() - pianoQuantity);
-        else if(pianos.get(pianoID-1).getPianoQuantity() != 0) {
-            message = "You tried to buy " + pianoQuantity + " pianos while only " + pianos.get(pianoID-1).getPianoQuantity() +
-                    " pianos were available. " + pianos.get(pianoID-1).getPianoQuantity() + " pianos were bought." ;
-            pianos.get(pianoID - 1).setPianoQuantity(0);
-        } else
-            message = "User wanted to buy a piano but the stock is empty";
-
+        try
+        {
+            if(pianos.get(pianoID-1).getPianoQuantity() >= pianoQuantity)
+            {
+                pianos.get(pianoID-1).setPianoQuantity(pianos.get(pianoID-1).getPianoQuantity() - pianoQuantity);
+                message = pianoQuantity + " pianos were bought. Seller will contact you later to decide the payment and shipping.";
+            }
+            else if(pianos.get(pianoID-1).getPianoQuantity() != 0) {
+                message = "You tried to buy " + pianoQuantity + " pianos while only " + pianos.get(pianoID-1).getPianoQuantity() +
+                        " pianos were available. " + pianos.get(pianoID-1).getPianoQuantity() + " pianos were bought. " +
+                        "Seller will contact you later to decide the payment and shipping." ;
+                pianos.get(pianoID - 1).setPianoQuantity(0);
+            } else
+                message = "User wanted to buy a piano but the stock is empty";
+        }
+        catch(IndexOutOfBoundsException c){
+            message = "No piano with such ID exist!";
+        }
         //System.out.println(pianos.get(pianoID-1).toString());
     }
 
