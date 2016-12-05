@@ -33,7 +33,7 @@ public class Main {
         printFunctions();
 
         while(!isExit) {
-            print("\nWhat you wish to do? (Type number to call function):");
+            print("\nWhat you wish to do? (Type number to call function): ");
             Scanner sc = new Scanner(System.in);
             action = sc.nextLine();
 
@@ -53,13 +53,13 @@ public class Main {
                 case "11":
                 case "12":
                 case "13":
-                    print("Not Implemented Yet");
+                    println("Not Implemented Yet");
                     break;
                 case "10":
                     BuyPiano buyPiano = new BuyPiano();
                     break;
                 default:
-                    print("No such a function");
+                    println("No such a function");
                     break;
             }
         }
@@ -69,14 +69,18 @@ public class Main {
         int i = 1;
 
         for (Object function: functions) {
-            print(i + ". " + function);
+            println(i + ". " + function);
 
             i++;
         }
     }
 
-    private static void print(String text){
+    private static void println(String text){
         System.out.println(text);
+    }
+
+    private static void print(String text){
+        System.out.print(text);
     }
 
 }
