@@ -57,7 +57,13 @@ public class Main {
                     println("Not Implemented Yet");
                     break;
                 case "10":
-                    buyPiano.buyPiano(5, 5);
+                    print("\nWhat piano you wish to buy(Piano ID): ");
+                    int pID = sc.nextInt();
+                    print("\nHow many pianos you wish to buy: ");
+                    int pQ = sc.nextInt();
+
+                    buyPiano.buyPiano(pID, pQ);
+
                     if(!buyPiano.getMessage().equals("")) {
                         println(buyPiano.getMessage());
                         buyPiano.setMessage("");
