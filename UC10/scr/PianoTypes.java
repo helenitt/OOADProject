@@ -1,7 +1,7 @@
 /**
  * Created by danie on 05.12.2016.
  */
-public enum PianoType {
+public enum PianoTypes {
     GRAND, UPRIGHT, SPECIALIZED, ELECTRIC;
 
     public String toString(){

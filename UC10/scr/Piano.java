@@ -5,7 +5,7 @@
 public class Piano {
     private int pianoID;
     private String pianoName;
-    private PianoType pianoType;
+    private PianoTypes pianoTypes;
     private float pianoCost;
     private int pianoQuantity;
 
@@ -13,16 +13,16 @@ public class Piano {
     public Piano(){
         this.pianoID = 0;
         this.pianoName = null;
-        this.pianoType  = null;
+        this.pianoTypes = null;
         this.pianoCost = 0.0f;
         this.pianoQuantity = 0;
     }
 
     //constructor
-    public Piano(int pianoID, String pianoName, PianoType pianoType, float pianoCost, int pianoQuantity){
+    public Piano(int pianoID, String pianoName, PianoTypes pianoTypes, float pianoCost, int pianoQuantity){
         this.pianoID = pianoID;
         this.pianoName = pianoName;
-        this.pianoType = pianoType;
+        this.pianoTypes = pianoTypes;
         this.pianoCost = pianoCost;
         this.pianoQuantity = pianoQuantity;
     }
@@ -46,12 +46,12 @@ public class Piano {
         this.pianoName = pianoName;
     }
 
-    public PianoType getPianoType(){
-        return pianoType;
+    public PianoTypes getPianoTypes(){
+        return pianoTypes;
     }
 
-    public void setPianoType(PianoType pianoType){
-        this.pianoType = pianoType;
+    public void setPianoTypes(PianoTypes pianoTypes){
+        this.pianoTypes = pianoTypes;
     }
 
     public float getPianoCost(){
@@ -72,7 +72,7 @@ public class Piano {
 
     @Override
     public String toString(){
-        return "Piano ID: " + pianoID + "/nPiano Name: " + pianoName + "/nPiano Cost: €" + pianoCost + "/nPiano Quantity: " + pianoQuantity;
+        return "Piano ID: " + pianoID + "/nPiano Name: " + pianoName + "/nPiano Type: " + pianoTypes.toString() + "/nPiano Cost: €" + pianoCost + "/nPiano Quantity: " + pianoQuantity;
     }
 
 }
