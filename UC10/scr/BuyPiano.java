@@ -33,11 +33,12 @@ public class BuyPiano {
         //System.out.println(pianos.get(pianoID-1).toString());
         if(pianos.get(pianoID-1).getPianoQuantity() >= pianoQuantity)
             pianos.get(pianoID-1).setPianoQuantity(pianos.get(pianoID-1).getPianoQuantity() - pianoQuantity);
-        else {
+        else if(pianos.get(pianoID-1).getPianoQuantity() != 0) {
             message = "You tried to buy " + pianoQuantity + " pianos while only " + pianos.get(pianoID-1).getPianoQuantity() +
                     " pianos were available. " + pianos.get(pianoID-1).getPianoQuantity() + " pianos were bought." ;
             pianos.get(pianoID - 1).setPianoQuantity(0);
-        }
+        } else
+            message = "User wanted to buy a piano but the stock is empty";
 
         //System.out.println(pianos.get(pianoID-1).toString());
     }
