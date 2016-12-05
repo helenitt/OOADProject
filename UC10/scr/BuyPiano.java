@@ -27,4 +27,8 @@ public class BuyPiano {
         Piano newPiano = new Piano(pianoID, pianoName, pianoCost, pianoQuantity);
         pianos.add(newPiano);
     }
+
+    public void buyPiano(int pianoID, int pianoQuantity){
+        
+    }
 }
