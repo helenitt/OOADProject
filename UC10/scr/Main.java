@@ -50,6 +50,9 @@ public class Main {
                 case "7":
                 case "8":
                 case "9":
+                case "11":
+                case "12":
+                case "13":
                     print("Not Implemented Yet");
                     break;
                 case "10":
@@ -57,13 +60,8 @@ public class Main {
                     print("Insert piano ID:");
                     buyPiano.piano.setPianoID(sc.nextInt());
                     break;
-                case "11":
-                case "12":
-                case "13":
-                    print("Not Implemented Yet");
-                    break;
                 default:
-                    print("Not Implemented Yet");
+                    print("No such a function");
                     break;
             }
         }
