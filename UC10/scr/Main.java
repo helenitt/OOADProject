@@ -58,9 +58,9 @@ public class Main {
                     break;
                 case "10":
                     buyPiano.buyPiano(5, 5);
-                    if(buyPiano.message != "") {
-                        println(buyPiano.message);
-                        buyPiano.message = "";
+                    if(!buyPiano.getMessage().equals("")) {
+                        println(buyPiano.getMessage());
+                        buyPiano.setMessage("");
                     }
                     break;
                 default:

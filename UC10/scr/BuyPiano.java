@@ -8,7 +8,7 @@ import java.util.List;
 public class BuyPiano {
     private static String fnTitle = "Buy Piano";
     private final List<Piano> pianos;
-    public String message = "";
+    private String message = "";
 
     public BuyPiano(){
         pianos = new LinkedList<>();
@@ -24,7 +24,7 @@ public class BuyPiano {
         return fnTitle;
     }
 
-    public void addPiano(int pianoID, String pianoName, PianoTypes pianoTypes, float pianoCost, int pianoQuantity){
+    private void addPiano(int pianoID, String pianoName, PianoTypes pianoTypes, float pianoCost, int pianoQuantity){
         Piano newPiano = new Piano(pianoID, pianoName, pianoTypes, pianoCost, pianoQuantity);
         pianos.add(newPiano);
     }
@@ -40,5 +40,13 @@ public class BuyPiano {
         }
 
         //System.out.println(pianos.get(pianoID-1).toString());
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message){
+        this.message = message;
     }
 }
