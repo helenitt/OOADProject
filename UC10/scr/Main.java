@@ -37,7 +37,7 @@ public class Main {
             Scanner sc = new Scanner(System.in);
             action = sc.nextLine();
 
-            switch (action) {
+            switch (action.toLowerCase()) {
                 case "exit":
                     isExit = true;
                     break;
@@ -54,6 +54,8 @@ public class Main {
                     break;
                 case "10":
                     BuyPiano buyPiano = new BuyPiano();
+                    print("Insert piano ID:");
+                    buyPiano.piano.setPianoID(sc.nextInt());
                     break;
                 case "11":
                 case "12":

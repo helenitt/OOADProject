@@ -5,14 +5,15 @@
 public class BuyPiano {
     private static String fTitle = "Buy Piano";
     private static String fDesc = "Allows to buy Piano";
+    Piano piano;
 
     public BuyPiano(){
-        System.out.print("hello");
+        piano = new Piano();
     }
 
-    public BuyPiano(int id)
+    public BuyPiano(int pianoID, String pianoName, float pianoCost, int pianoQuantity)
     {
-
+        piano = new Piano(pianoID, pianoName, pianoCost, pianoQuantity);
     }
 
     public static String getTitle(){
