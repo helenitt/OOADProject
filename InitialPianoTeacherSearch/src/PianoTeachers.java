@@ -9,16 +9,13 @@ public class PianoTeachers {
     private String phone;
 
 
-    //contructor for default
+
     public PianoTeachers() {
-       /* teachersName = "Null";
-        area = "Null";
-        rating = 0;
-        phone = "null";*/
+
 
     }
 
-//constructors
+
 
     public PianoTeachers(String teachersName, Locations area, int rating, String phone) {
         this.teachersName = teachersName;
