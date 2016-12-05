@@ -57,8 +57,6 @@ public class Main {
                     break;
                 case "10":
                     BuyPiano buyPiano = new BuyPiano();
-                    print("Insert piano ID:");
-                    buyPiano.piano.setPianoID(sc.nextInt());
                     break;
                 default:
                     print("No such a function");
