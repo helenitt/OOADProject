@@ -31,6 +31,7 @@ public class Main {
         functions.add("Rate Tuner (Placeholder)");
 
         printFunctions();
+        BuyPiano buyPiano = new BuyPiano();
 
         while(!isExit) {
             print("\nWhat you wish to do? (Type number to call function): ");
@@ -56,8 +57,11 @@ public class Main {
                     println("Not Implemented Yet");
                     break;
                 case "10":
-                    BuyPiano buyPiano = new BuyPiano();
-                    buyPiano.buyPiano(5, 2);
+                    buyPiano.buyPiano(5, 5);
+                    if(buyPiano.message != "") {
+                        println(buyPiano.message);
+                        buyPiano.message = "";
+                    }
                     break;
                 default:
                     println("No such a function");

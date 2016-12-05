@@ -8,6 +8,7 @@ import java.util.List;
 public class BuyPiano {
     private static String fnTitle = "Buy Piano";
     private final List<Piano> pianos;
+    public String message = "";
 
     public BuyPiano(){
         pianos = new LinkedList<>();
@@ -30,7 +31,14 @@ public class BuyPiano {
 
     public void buyPiano(int pianoID, int pianoQuantity){
         //System.out.println(pianos.get(pianoID-1).toString());
-        pianos.get(pianoID-1).setPianoQuantity(pianos.get(pianoID-1).getPianoQuantity() - pianoQuantity );
+        if(pianos.get(pianoID-1).getPianoQuantity() >= pianoQuantity)
+            pianos.get(pianoID-1).setPianoQuantity(pianos.get(pianoID-1).getPianoQuantity() - pianoQuantity);
+        else {
+            message = "You tried to buy " + pianoQuantity + " pianos while only " + pianos.get(pianoID-1).getPianoQuantity() +
+                    " pianos were available. " + pianos.get(pianoID-1).getPianoQuantity() + " pianos were bought." ;
+            pianos.get(pianoID - 1).setPianoQuantity(0);
+        }
+
         //System.out.println(pianos.get(pianoID-1).toString());
     }
 }
