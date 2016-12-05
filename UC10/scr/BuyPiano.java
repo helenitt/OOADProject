@@ -6,7 +6,7 @@ import java.util.List;
  */
 
 public class BuyPiano {
-    private static String fTitle = "Buy Piano";
+    private static String fnTitle = "Buy Piano";
     private final List<Piano> pianos;
 
     public BuyPiano(){
@@ -20,7 +20,7 @@ public class BuyPiano {
     }
 
     public static String getTitle(){
-        return fTitle;
+        return fnTitle;
     }
 
     public void addPiano(int pianoID, String pianoName, PianoTypes pianoTypes, float pianoCost, int pianoQuantity){
