@@ -1,5 +1,7 @@
 #uc10 Buy Piano#
 
+BuyPiano can be started either directly(by giving id and quantity) or by first searching all pianos and then buying one of it.
+
 |*uc10*|*Buy Piano*| 
 |----|----|
 |Name|Register User|
@@ -20,12 +22,12 @@
 | |5. System displays a confirmation message|
 |Typical Scenario 2| |
 | |2. User invokes buy piano function|
-| |3.	System asks for Piano ID|
+| |3. System asks for Piano ID|
 | |4. User inserts Piano ID|
 | |5. System asks for quantity|
 | |6. User inserts quantity|
-| |7. System displays message that informs whetever piano were bought or not|
-| |8. Piano prints all bought by the user pianos|
+| |7. System displays message that informs whether the piano was bought or not|
+| |8. System prints all the pianos that were bought by the user|
 | | |
 |Alternate Scenario 2 for Typical Scenario 1| |
 | |2. System fails to retrieve the piano id|
@@ -46,7 +48,7 @@
 |Alternate Scenario 6 for Typical Scenario 2| |
 | |7. System tried to buy more pianos than in stock|
 | |8.	System informs user that he tried to buy more than in stock and that it bought the maximum possible quantity instead|
-| |9. Piano prints all bought by the user pianos|
+| |9. System prints all pianos bought by the user|
 | | |
 |Conclusions|User bought piano|
 |Post conditions| |
