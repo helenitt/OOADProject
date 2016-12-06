@@ -68,6 +68,8 @@ public class Main {
                         println(buyPiano.getMessage());
                         buyPiano.setMessage("");
                     }
+
+                    println(buyPiano.userPianos.listAllBoughtPianos());
                     break;
                 default:
                     println("No such a function");
