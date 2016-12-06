@@ -72,7 +72,7 @@ public class Piano {
 
     @Override
     public String toString(){
-        return "Piano ID: " + pianoID + "\nPiano Name: " + pianoName + "\nPiano Type: " + pianoTypes.toString() + "\nPiano Cost: €" + pianoCost + "\nPiano Quantity: " + pianoQuantity;
+        return "Piano ID: " + pianoID + "\nPiano Name: " + pianoName + "\nPiano Type: " + pianoTypes.toString() + "\nPiano Cost: €" + pianoCost + "\nPiano Quantity: " + pianoQuantity + "\n\n";
     }
 
 }
