@@ -26,7 +26,7 @@ public class UserPianos{
     }
 
     public String listAllBoughtPianos(){
-        String pianoList="List of all bought pianos:";
+        String pianoList="\nList of all bought pianos:";
 
         for (Piano piano:boughtPianos) {
             pianoList += "\n" + piano.toString();
