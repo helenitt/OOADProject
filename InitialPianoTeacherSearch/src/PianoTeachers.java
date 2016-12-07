@@ -1,7 +1,7 @@
 /**
  * Created by t00183399 Shane Clifford on 21/11/2016.
  */
-public class PianoTeachers implements PianoPerson{
+public class PianoTeachers implements PianoPerson {
 
     private String teachersName;
     private Locations area;
@@ -9,12 +9,10 @@ public class PianoTeachers implements PianoPerson{
     private String phone;
 
 
-
     public PianoTeachers() {
 
 
     }
-
 
 
     public PianoTeachers(String teachersName, Locations area, int rating, String phone) {
@@ -63,9 +61,9 @@ public class PianoTeachers implements PianoPerson{
     public String toString() {
         return
                 "\nTeachers Name : " + teachersName + '\n' +
-                "Area : " + area + '\n' +
-                "Rating : " + rating + "\n" +
-                "Phone : " + phone;
+                        "Area : " + area + '\n' +
+                        "Rating : " + rating + "\n" +
+                        "Phone : " + phone;
 
     }
 }

@@ -7,17 +7,18 @@ import javax.swing.JOptionPane;
 public class FindPianoTeacherTester {
 
     public static void main(String[] args) {
-		String[] choices = { "TRALEE", "DINGLE", "KILLARNEY" };
+
+        String[] choices = {"TRALEE", "DINGLE", "KILLARNEY"};
 
         TeacherDirectory teachDir = new TeacherDirectory();
 
 
-        String area =  (String) JOptionPane.showInputDialog(null, "Choose a location",
-        "Teacher Location", JOptionPane.QUESTION_MESSAGE, null,
-        choices,
-        choices[0]);
+        String area = (String) JOptionPane.showInputDialog(null, "Choose a location",
+                "Teacher Location", JOptionPane.QUESTION_MESSAGE, null,
+                choices,
+                choices[0]);
 
-        
+
         System.out.println("These teachers are available in your area " + teachDir.getByArea(Locations.valueOf(area)));
 
     }

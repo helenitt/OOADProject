@@ -4,14 +4,17 @@
 public interface PianoPerson {
 
 
-         String getName();
-         Locations getArea();
-         void setArea(Locations l);
-         String getPhone();
-         void setPhone(String phone);
-         String toString();
+    String getName();
 
+    Locations getArea();
 
+    void setArea(Locations l);
+
+    String getPhone();
+
+    void setPhone(String phone);
+
+    String toString();
 
 
 }

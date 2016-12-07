@@ -15,6 +15,6 @@ public enum Locations {
             default:
                 return "Unknown Location";
 
-            }
         }
     }
+}

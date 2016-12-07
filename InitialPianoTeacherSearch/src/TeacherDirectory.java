@@ -33,10 +33,7 @@ public class TeacherDirectory {
         addTeachers("Fidel Castro", Locations.KILLARNEY, 4, "0879866899");
 
 
-
-
     }
-
 
 
     private void addTeachers(String teachersName, Locations area, int rating, String phone) {
@@ -52,9 +49,7 @@ public class TeacherDirectory {
     }
 
 
-
-
-
     public List<PianoTeachers> search(PianoTeachers searchTeacher) {
-        return teachers.stream().filter(teach -> teach.getPhone().matches(searchTeacher.getPhone())).map(teach -> (teach)).collect(Collectors.toCollection(LinkedList::new));}
+        return teachers.stream().filter(teach -> teach.getPhone().matches(searchTeacher.getPhone())).map(teach -> (teach)).collect(Collectors.toCollection(LinkedList::new));
+    }
 }
