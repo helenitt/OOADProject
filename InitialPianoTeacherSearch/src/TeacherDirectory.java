@@ -56,6 +56,5 @@ public class TeacherDirectory {
 
 
     public List<PianoTeachers> search(PianoTeachers searchTeacher) {
-        List<PianoTeachers> foundTeach = teachers.stream().filter(teach -> teach.getPhone().matches(searchTeacher.getPhone())).map(teach -> (teach)).collect(Collectors.toCollection(LinkedList::new));
-        return foundTeach;}
+        return teachers.stream().filter(teach -> teach.getPhone().matches(searchTeacher.getPhone())).map(teach -> (teach)).collect(Collectors.toCollection(LinkedList::new));}
 }
