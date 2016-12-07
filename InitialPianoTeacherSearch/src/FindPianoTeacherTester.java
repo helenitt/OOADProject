@@ -10,7 +10,7 @@ public class FindPianoTeacherTester {
 		String[] choices = { "TRALEE", "DINGLE", "KILLARNEY" };
 
         TeacherDirectory teachDir = new TeacherDirectory();
-        //Scanner in = new Scanner(System.in);
+
 
         String area =  (String) JOptionPane.showInputDialog(null, "Choose a location",
         "Teacher Location", JOptionPane.QUESTION_MESSAGE, null,
