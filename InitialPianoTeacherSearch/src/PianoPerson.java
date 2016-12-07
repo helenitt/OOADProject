@@ -6,12 +6,13 @@ public interface PianoPerson {
         //interfce not an implementation
 
          String getName();
-         String setName();
-         String getArea();
-         String setArea();
+         Locations getArea();
+         void setArea(Locations l);
          String getPhone();
-         String setPhone();
+         void setPhone(String phone);
          String toString();
+
+
 
 
 }

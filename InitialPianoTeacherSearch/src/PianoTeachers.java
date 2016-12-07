@@ -1,7 +1,7 @@
 /**
  * Created by t00183399 Shane Clifford on 21/11/2016.
  */
-public class PianoTeachers {
+public class PianoTeachers implements PianoPerson{
 
     private String teachersName;
     private Locations area;
@@ -25,11 +25,11 @@ public class PianoTeachers {
     }
 
 
-    public String getTeachersName() {
+    public String getName() {
         return teachersName;
     }
 
-    public void setTeachersName(String teachersName) {
+    public void setName(String teachersName) {
         this.teachersName = teachersName;
     }
 
