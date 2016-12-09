@@ -32,7 +32,7 @@ public class BuyPiano {
     }
 
     public void buyPiano(int pianoID, int pianoQuantity){
-        //System.out.println(pianos.get(pianoID-1).toString());
+
         try
         {
             if(pianos.get(pianoID-1).getPianoQuantity() >= pianoQuantity)
@@ -55,7 +55,7 @@ public class BuyPiano {
         catch(IndexOutOfBoundsException c){
             message = "No piano with such ID exist!";
         }
-        //System.out.println(pianos.get(pianoID-1).toString());
+
     }
 
     public String getMessage(){
